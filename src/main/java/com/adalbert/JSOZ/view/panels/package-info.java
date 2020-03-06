@@ -1,0 +1,1 @@
+package com.adalbert.JSOZ.view.panels;

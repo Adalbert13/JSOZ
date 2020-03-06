@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>      
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/jsoz?useSSL=false&amp;serverTimezone=UTC</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">safePassword</property>
+    <property name="show_sql">false</property>
+    <property name="hibernate.connection.characterEncoding">utf8</property>   
+        
+    <mapping class="com.adalbert.JSOZ.model.Kierunek" />
+    <mapping class="com.adalbert.JSOZ.model.Wydzial" />
+    <mapping class="com.adalbert.JSOZ.model.Plan" />
+    <mapping class="com.adalbert.JSOZ.model.Semestr" />
+    <mapping class="com.adalbert.JSOZ.model.KierunkowyEfektKsztalcenia" />
+    <mapping class="com.adalbert.JSOZ.model.Kurs" />
+    <mapping class="com.adalbert.JSOZ.model.Zamiennik" />
+    <mapping class="com.adalbert.JSOZ.model.Student" />
+
+     
+  </session-factory>
+</hibernate-configuration>
